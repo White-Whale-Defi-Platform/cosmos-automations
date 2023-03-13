@@ -1,0 +1,7 @@
+.env
+/node_modules
+/out
+.vscode
+*.txt
+
+out
