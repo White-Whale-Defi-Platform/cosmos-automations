@@ -28,4 +28,12 @@ copy the .env.example
 
 add mnemonic and replace the addresses with your own then :wq to save
 
+`npm install`
+
+`npm run build`
+
+node index/out.JS
+
+
+
 
