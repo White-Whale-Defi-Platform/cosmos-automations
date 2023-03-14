@@ -20,6 +20,21 @@ terrad tx authz grant <address of wallet you want to be able to vote> generic --
 
 `apt install npm`
 
+install newest nodeJS
+
+  VERSION=v18.15.0
+  DISTRO=linux-x64
+  mkdir -p /usr/local/lib/nodejs
+  cd /usr/local/lib/nodejs
+  wget https://nodejs.org/dist/v18.15.0/node-v18.15.0-linux-x64.tar.xz
+  tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs 
+
+  VERSION=v18.15.0
+  DISTRO=linux-x64
+  export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
+  . ~/.profile
+  node -v
+  
 copy the .env.example
 
 `cp ~/validator-claim-bot/rewards_bot/.env.example .env`
