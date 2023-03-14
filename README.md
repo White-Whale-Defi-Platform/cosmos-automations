@@ -32,7 +32,7 @@ add mnemonic and replace the addresses with your own then :wq to save
 
 `npm run build`
 
-node index/out.JS
+node out/index.js
 
 
 
