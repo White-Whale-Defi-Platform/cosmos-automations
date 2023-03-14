@@ -14,7 +14,7 @@ terrad tx authz grant <address of wallet you want to be able to vote> generic --
 terrad tx authz grant <address of wallet you want to be able to vote> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward --from validator
 ```
 
-Get bot running:
+### Run Bot:
 
 `Clone repo`
 
