@@ -2,16 +2,17 @@
 Claim bot for wallet with authz claim permissions
 
 ### Commands:  
+Run these commands from your validator. 
 
+To grant a wallet for claiming:  
 ```
-simd tx authz grant <claim_address> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission --from validator
-simd tx authz grant <claim_address> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward --from validator
+$BINARY tx authz grant <claim_address> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission --from <key-name>
+$BINARY tx authz grant <claim_address> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward --from <key-name>
 ```
-### Example Commands:
 
+To direct the rewards to a different wallet than the validator wallet:  
 ```
-terrad tx authz grant <address of wallet you want to be able to vote> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission --from validator  
-terrad tx authz grant <address of wallet you want to be able to vote> generic --msg-type=/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward --from validator
+$BINARY tx distribution set-withdraw-addr <withdraw-addr> --from <key-name> --chain-id <chain-id> 
 ```
 
 ### Run Bot:
