@@ -48,8 +48,55 @@ add mnemonic and replace the addresses with your own then :wq to save
 
 `npm run build`
 
-node out/index.js
+`node out/index.js`
+
+## Schedule it
 
 
+mkdir -p ~/scripts/
+vim ~/scripts/start_script.sh
+
+```
+#! /bin/bash
+source $HOME/.bashrc
+
+cd /root/validator-claim-bot/rewards_bot
+export NODE_ENV=development
+npm run build
+```
+
+`chmod +x start_script.sh `
+
+`vim /etc/systemd/system/claim.service`
+
+```
+[Unit]
+Description=validator claim
+
+[Service]
+Type=simple
+User=root
+ExecStart=/root/scripts/start_script.sh
+Restart=on-failure
+```
+
+`systemctl daemon-reload`
+`systemctl enable claim.service`
+`systemclt start claim.service`
+
+### Timer for 13:00:00 UTC everyday
+
+`vim /etc/systemd/system/claim.timer`
+
+```
+[Unit]
+Description=claim
+
+[Timer]
+OnCalendar=*-*-* 13:00:00 UTC
+
+[Install]
+WantedBy=multi-user.target
+```
 
 
