@@ -80,9 +80,9 @@ ExecStart=/root/scripts/start_script.sh
 Restart=on-failure
 ```
 
-`systemctl daemon-reload`
-`systemctl enable claim.service`
-`systemclt start claim.service`
+`systemctl daemon-reload`  
+`systemctl enable claim.service`  
+`systemclt start claim.service`  
 
 ### Timer for 13:00:00 UTC everyday
 
