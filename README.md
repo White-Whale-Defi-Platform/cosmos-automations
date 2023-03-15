@@ -53,8 +53,8 @@ add mnemonic and replace the addresses with your own then :wq to save
 ## Schedule it
 
 
-mkdir -p ~/scripts/
-vim ~/scripts/start_script.sh
+`mkdir -p ~/scripts/`  
+`vim ~/scripts/start_script.sh`
 
 ```
 #! /bin/bash
