@@ -1,5 +1,7 @@
 # validator-claim-bot
-Claim bot for wallet with authz claim permissions
+
+- Never touch private validator key again to claim
+- No need for binaries or upgrading binaries to claim as opposed to claiming from CLI using binaries
 
 ### Commands:  
 Run these commands from your validator. 
