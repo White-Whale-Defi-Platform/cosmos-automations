@@ -2,6 +2,25 @@
 
 ![Git2](https://user-images.githubusercontent.com/111542162/226931245-63a1e7ab-a4a7-4e22-8e80-1966b0a7ef43.png)
 
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
+[![Discord badge][]][Discord invite]
+[![Twitter handle][]][Twitter badge]
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6401/badge)](https://bestpractices.coreinfrastructure.org/projects/6401)
+
+[Discord invite]: https://discord.com/invite/tSxyyCWgYX
+[Discord badge]: https://img.shields.io/discord/908044702794801233
+[Twitter handle]: https://img.shields.io/twitter/follow/WhiteWhaleDefi.svg?style=social&label=Follow
+[Twitter badge]: https://twitter.com/intent/follow?screen_name=WhiteWhaleDefi
+
+## Contributing
+If you would like to contribute to this repository, which is very much appreciated, make sure to check out the resources below. 
+- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
+- [Contributing guide](./docs/CONTRIBUTING.md)
+- [Security Policies and Procedures](./docs/SECURITY.md)
+- [License](./LICENSE)
+
 - Make automated claims on all your validators
 - Send all to one place
 - Never touch private validator key again to claim
