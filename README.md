@@ -1,5 +1,7 @@
 # validator-claim-bot
 
+![Git2](https://user-images.githubusercontent.com/111542162/226931245-63a1e7ab-a4a7-4e22-8e80-1966b0a7ef43.png)
+
 - Make automated claims on all your validators
 - Send all to one place
 - Never touch private validator key again to claim
