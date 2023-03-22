@@ -1,4 +1,4 @@
-# validator-claim-bot
+# Autmated Validator Rewards Claim Bot
 
 ![Git2](https://user-images.githubusercontent.com/111542162/226931245-63a1e7ab-a4a7-4e22-8e80-1966b0a7ef43.png)
 
