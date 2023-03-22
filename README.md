@@ -14,13 +14,6 @@
 [Twitter handle]: https://img.shields.io/twitter/follow/WhiteWhaleDefi.svg?style=social&label=Follow
 [Twitter badge]: https://twitter.com/intent/follow?screen_name=WhiteWhaleDefi
 
-## Contributing
-If you would like to contribute to this repository, which is very much appreciated, make sure to check out the resources below. 
-- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
-- [Contributing guide](./docs/CONTRIBUTING.md)
-- [Security Policies and Procedures](./docs/SECURITY.md)
-- [License](./LICENSE)
-
 - Make automated claims on all your validators
 - Send all to one place
 - Never touch private validator key again to claim
@@ -126,3 +119,9 @@ WantedBy=multi-user.target
 ```
 
 
+## Contributing
+If you would like to contribute to this repository, which is very much appreciated, make sure to check out the resources below. 
+- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
+- [Contributing guide](./docs/CONTRIBUTING.md)
+- [Security Policies and Procedures](./docs/SECURITY.md)
+- [License](./LICENSE)
