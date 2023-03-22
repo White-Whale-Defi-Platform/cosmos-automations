@@ -1,7 +1,9 @@
 # validator-claim-bot
 
+- Make automated claims on all your validators
+- Send all to one place
 - Never touch private validator key again to claim
-- No need for binaries or upgrading binaries to claim as opposed to claiming from CLI using binaries
+- No need for binaries for everychain if you were to automate using CLI+binaries to claim
 
 ### Commands:  
 Run these commands from your validator. 
