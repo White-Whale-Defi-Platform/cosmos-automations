@@ -1,11 +1,11 @@
 import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 
-import { validatorRewardSetup } from "..";
+import { ValidatorRewardSetup } from "../setups/validatorRewardSetup";
 
 /**
  *
  */
-export function getMsgWithdrawDelegatorRewardEncoded(chain: validatorRewardSetup) {
+export function getMsgWithdrawDelegatorRewardEncoded(chain: ValidatorRewardSetup) {
 	return {
 		typeUrl: "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward",
 		value: MsgWithdrawDelegatorReward.encode(

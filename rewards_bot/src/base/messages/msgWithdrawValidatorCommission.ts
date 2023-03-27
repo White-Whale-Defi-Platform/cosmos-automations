@@ -1,11 +1,11 @@
 import { MsgWithdrawValidatorCommission } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 
-import { validatorRewardSetup } from "..";
+import { ValidatorRewardSetup } from "../setups/validatorRewardSetup";
 
 /**
  *
  */
-export function getMsgWithdrawValidatorCommissionEncoded(chain: validatorRewardSetup) {
+export function getMsgWithdrawValidatorCommissionEncoded(chain: ValidatorRewardSetup) {
 	return {
 		typeUrl: "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission",
 		value: MsgWithdrawValidatorCommission.encode(
