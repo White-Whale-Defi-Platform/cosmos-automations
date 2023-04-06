@@ -1,5 +1,6 @@
 # Propy
 
+![Git2 (3)](https://user-images.githubusercontent.com/111542162/230439615-5937dd0a-4945-4279-abbf-8950cfddf0d5.png)
 
 [discord invite]: https://discord.com/invite/tSxyyCWgYX
 [discord badge]: https://img.shields.io/discord/908044702794801233
