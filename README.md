@@ -1,5 +1,7 @@
 # Cosmos Automations
 
+![Git2 (2)](https://user-images.githubusercontent.com/111542162/230439651-52512bea-76af-468c-ad39-d4692fa831d6.png)
+
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 [![Discord badge][]][discord invite]
