@@ -1,11 +1,11 @@
 # Security Policies and Procedures
-This document outlines security procedures and general policies for the `migaloo-bots` project.
+This document outlines security procedures and general policies for the `cosmos-automations` project.
 * [Reporting a Bug](#reporting-a-bug)
 * [Disclosure Policy](#disclosure-policy)
 * [Suggestions on this Policy](#comments-on-this-policy)
 
 ## Reporting a Bug
-Security is something we take seriously at White Whale. Thanks for taking the time to improve the security of `migaloo-bots`. We appreciate your efforts and responsible disclosure and will make every effort to acknowledge your contributions.
+Security is something we take seriously at White Whale. Thanks for taking the time to improve the security of `cosmos-automations`. We appreciate your efforts and responsible disclosure and will make every effort to acknowledge your contributions.
 
 Please report security bugs by emailing White Whale at security@whitewhale.money. Do not report it publicly on the GitHub issues tracker. Your report should detail the necessary steps to reproduce the security issue. We will acknowledge your email within 48 hours and send a detailed response indicating the next steps. After the initial reply to your report, we will keep you informed of the progress toward a fix and full announcement and may ask for additional information or guidance.
 
