@@ -1,6 +1,5 @@
-# Autmated Validator Rewards Claim Bot
+# Propy
 
-![Git2](https://user-images.githubusercontent.com/111542162/226931245-63a1e7ab-a4a7-4e22-8e80-1966b0a7ef43.png)
 
 [discord invite]: https://discord.com/invite/tSxyyCWgYX
 [discord badge]: https://img.shields.io/discord/908044702794801233
