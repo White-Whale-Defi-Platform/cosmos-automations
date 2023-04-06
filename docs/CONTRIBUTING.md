@@ -1,13 +1,13 @@
 
 # Contributing to Migaloo
 
-Welcome! We are thrilled that you want to contribute to White Whale Migaloo Bots! Consider that there are many ways in which you can contribute, 
+Welcome! We are thrilled that you want to contribute to White Whale Cosmos Automations! Consider that there are many ways in which you can contribute, 
 it's not only about writing code. In this document we go through different ways you can get involved with the project.
 
 ## Crafting Code
 
-If you are a software developer and want to contribute writing code for the bots, the first step is to get familiar with 
-the Migaloo architecture, which you can learn about in our [docs](https://white-whale-defi-platform.github.io/docs/).
+If you are a software developer and want to contribute writing code for cosmos automations, the first step is to get familiar with 
+the cosmwasm, which you can learn about in their [github](https://github.com/CosmWasm).
 
 Before you can write any code, please take a look at the list of prerequisites below.  
 
@@ -19,11 +19,11 @@ The following are the tools you'll need:
 - [Git](https://git-scm.com/) 
 - [NodeJS](https://nodejs.org/en/download/)
 
-- An IDE. We recommend either [Intellij Idea](https://www.jetbrains.com/idea/download/) or [VS Code](https://code.visualstudio.com/download), 
+- An IDE. We recommend [VS Code](https://code.visualstudio.com/download), 
 
 --- 
 Then fork the code and read it through. We encourage you to make your own contributions, though you might look at the 
-[issue tracker](https://github.com/White-Whale-Defi-Platform/migaloo-bots/issues) if you want to solve something that has 
+[issue tracker](https://github.com/White-Whale-Defi-Platform/cosmos-automations/issues) if you want to solve something that has 
 been pointed out already.
 
 Make a pull request to our repository once your work is complete. We will review it and discuss potential changes before
@@ -31,7 +31,7 @@ we merge it to the main code base.
 
 ## Helping out in the issue tracker
 
-We use [Github issues](https://github.com/White-Whale-Defi-Platform/migaloo-bots/issues) to manage issues in our bot code. 
+We use [Github issues](https://github.com/White-Whale-Defi-Platform/cosmos-automations/issues) to manage issues in our bot code. 
 You can help out by resolving or commenting on existing issues or creating new issues for what you find. Whether you want 
 to report an issue or have a feature request, please fill the issue template and provide as much information as possible.
 
@@ -62,7 +62,7 @@ channels, creating documentation in our Wiki, creating medium articles or even c
 
 White Whale is a community project, we are curious to hear your ideas for the future of Migaloo! One way to provide feedback
 is by doing to our [Discord channel](https://discordapp.com/channels/908044702794801233/908044703373606954). You can also
-submit a suggestion or feature request through [Github's issue tracker](https://github.com/White-Whale-Defi-Platform/migaloo-bots/issues). 
+submit a suggestion or feature request through [Github's issue tracker](https://github.com/White-Whale-Defi-Platform/cosmos-automations/issues). 
 When doing so, make sure to describe your idea as good as possible so that we understand what you envision.
 
 ## Bringing your expertise
