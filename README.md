@@ -13,7 +13,9 @@
 [twitter handle]: https://img.shields.io/twitter/follow/WhiteWhaleDefi.svg?style=social&label=Follow
 [twitter badge]: https://twitter.com/intent/follow?screen_name=WhiteWhaleDefi
 
-Cosmos Automations was made by the White Whale team to aid other Validators and Dev Teams to operate more efficiently and securely. This repo includes bots to:
+Cosmos Automations was made by the White Whale team to aid other Validators and Dev Teams to operate more efficiently and securely. 
+
+This repo includes these bots:
 
 - Rewards_Bot: Claim Validator Rewards with Authz
 - Propy: Get Slack Alerts for Props that you haven't voted on
