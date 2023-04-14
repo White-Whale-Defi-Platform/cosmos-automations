@@ -1,6 +1,6 @@
 # Autmated Validator Rewards Claim Bot
 
-![Git2](https://user-images.githubusercontent.com/111542162/226931245-63a1e7ab-a4a7-4e22-8e80-1966b0a7ef43.png)
+![Git2 (4)](https://user-images.githubusercontent.com/111542162/232131145-95be3083-50df-4ae4-8cef-fa2c0f1d446b.png)
 
 [Discord invite]: https://discord.com/invite/tSxyyCWgYX
 [Discord badge]: https://img.shields.io/discord/908044702794801233
