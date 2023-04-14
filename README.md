@@ -18,7 +18,7 @@ Cosmos Automations was made by the White Whale team to aid other Validators and 
 This repo includes these bots:
 
 - Propy: Get Slack Alerts for Props that you haven't voted on
-- Multi-Purpose Bot: Claim Validator Rewards with Authz, Claim Fees from a Smart Contract
+- Trigger Bot: Claim Validator Rewards with Authz, Claim Fees from a Smart Contract
 
 ## Contributing
 
