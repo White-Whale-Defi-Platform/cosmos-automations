@@ -1,4 +1,4 @@
-# Autmated Validator Rewards Claim Bot
+# Trigger Bot
 
 ![Git2 (4)](https://user-images.githubusercontent.com/111542162/232131189-d50af0e4-3173-49be-a5de-3699fc839891.png)
 
@@ -7,8 +7,13 @@
 [Twitter handle]: https://img.shields.io/twitter/follow/WhiteWhaleDefi.svg?style=social&label=Follow
 [Twitter badge]: https://twitter.com/intent/follow?screen_name=WhiteWhaleDefi
 
-- Make automated claims on all your validators
-- Send all to one place
+Use this bot to trigger various actions in the cosmos: 
+- Claim validator rewards
+- Claim fees from smart contract
+
+## Trigger a Claim of Validator Rewards
+
+- Send all rewards to one place
 - Never touch private validator key again to claim
 - No need for binaries for everychain if you were to automate using CLI+binaries to claim
 
@@ -50,9 +55,9 @@ node -v
 
 copy the .env.example
 
-`cp ~/validator-claim-bot/rewards_bot/.env.example .env`
+`cp ~/cosmos-automations/bots/trigger_bot/.env.example .env`
 
-`vim ~/validator-claim-bot/rewards_bot/.env`
+`vim ~/cosmos-automations/bots/trigger_bot.env`
 
 add mnemonic and replace the addresses with your own then :wq to save
 
@@ -72,7 +77,7 @@ add mnemonic and replace the addresses with your own then :wq to save
 #! /bin/bash
 source $HOME/.bashrc
 
-cd /root/validator-claim-bot/rewards_bot
+cd ~/cosmos-automations/bots/trigger_bot
 export NODE_ENV=development
 npm run build
 ```
@@ -110,6 +115,16 @@ OnCalendar=*-*-* 13:00:00 UTC
 [Install]
 WantedBy=multi-user.target
 ```
+
+## Trigger a Claim of Smart Contract fees
+
+Follow the steps above to get it set up. All you then need to do is add one line to the config.
+
+Edit config
+`vim ~/cosmos-automations/bots/trigger-bot/.env`
+
+add something like this to the CHAIN_SETUPS
+`{"rpcUrl":"https://rpc-whitewhale-testnet-xejdlrznpdaur7tp-ie.internalendpoints.notional.ventures:443", "prefix":"migaloo","gasprice":"0.015uwhale", "feeDistributorAddress":"migaloo1pl02gs047p84auvavwcawgfkehawv9vhgyndpyqyee796txelefq4np7kc"}`
 
 
 ## Contributing
