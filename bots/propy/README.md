@@ -54,7 +54,7 @@ source $HOME/.bashrc
 
 python3 /$USER/cosmos-automations/bots/propy/main.py --config /$USER/cosmos-automations/bots/propy/config.json --slack
 ```
-*Note: either set USER to a value (ex. export USER=admin) or replace user with the user you using /admin/cosmos-automations or /root/cosmos-automations/*
+_Note: either set USER to a value (ex. export USER=admin) or replace user with the user you using /admin/cosmos-automations or /root/cosmos-automations/_
 
 make executable:  
 `chmod +x start_script.sh `
@@ -74,7 +74,7 @@ User=$USER
 ExecStart=/$USER/scripts/propy.sh
 Restart=on-failure
 ```
-*Note: either set USER to a value (ex. export USER=admin) or replace user with the user you using /admin/cosmos-automations or /root/cosmos-automations/*
+_Note: either set USER to a value (ex. export USER=admin) or replace user with the user you using /admin/cosmos-automations or /root/cosmos-automations/_
 
 
 Test run systemd service:  
