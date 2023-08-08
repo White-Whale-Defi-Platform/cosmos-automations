@@ -11,8 +11,12 @@
 - Other bots only alert of a new vote, this bot will alert you of votes you haven't made
 - Simple setup
 
-### Fill out config.json
 
+### Setup:
+
+`Clone this repo to a server you use for monitoring`
+
+#### Fill out config.json
 example: 
 ```
 {
@@ -35,10 +39,63 @@ example:
 }
 ```
 
-### Commands:
+### Create Start Script
 
-### Run Bot:
 
-## Schedule it
+`mkdir -p ~/scripts/`  
+`vim ~/scripts/propy.sh`
 
-### Timer for 13:00:00 UTC everyday
+```
+#! /bin/bash
+source $HOME/.bashrc
+
+python3 /root/propy/main.py --config /root/propy/config.json --slack
+```
+
+`chmod +x start_script.sh `
+
+`vim /etc/systemd/system/propy.service`
+
+```
+[Unit]
+Description=prop alerts
+
+[Service]
+Type=simple
+User=$USER
+ExecStart=/$USER/scripts/propy.sh
+Restart=on-failure
+```
+
+`systemctl daemon-reload`  
+`systemctl enable propy.service`  
+
+Test run!  
+`systemclt start propy.service`  
+
+### Schedule with timer 
+
+`vim /etc/systemd/system/propy.timer`
+
+```
+[Unit]
+Description=check for props
+
+[Timer]
+OnCalendar=*-*-* 13:00:00 UTC
+
+[Install]
+WantedBy=multi-user.target
+```
+`systemctl daemon-reload`  
+`systemctl enable propy.timer`
+`systemclt start propy.timer`  
+
+
+## Contributing
+If you would like to contribute to this repository, which is very much appreciated, make sure to check out the resources below. 
+- [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
+- [Contributing guide](./docs/CONTRIBUTING.md)
+- [Security Policies and Procedures](./docs/SECURITY.md)
+- [License](./LICENSE)
+
