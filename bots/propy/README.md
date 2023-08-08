@@ -11,6 +11,30 @@
 - Other bots only alert of a new vote, this bot will alert you of votes you haven't made
 - Simple setup
 
+### Fill out config.json
+
+example: 
+```
+{
+  "slack":{
+        "token":"<[youtube guide how to get token](https://www.youtube.com/watch?v=h94FK8h1OJU)",
+        "channel":"#governance"
+  },
+  "chains":[
+        {
+           "name":"Chihuahua",
+           "address":"chihuahua15tnycxe9csn7mkul4vvlyxlkd9jyqlw4ns0wgc",
+           "endpoint":"<check cosmos.directory for public endpoint>"
+        },
+        {
+         "name":"Injective",
+         "address":"inj16gdnrnl224ylje5z9vd0vn0msym7p58fcf4cak",
+         "endpoint":"<check cosmos.directory for public endpoint>"
+        }
+  ]
+}
+```
+
 ### Commands:
 
 ### Run Bot:
