@@ -14,7 +14,7 @@
 
 ### Setup:
 
-`Clone this repo to a server you use for monitoring`
+1. Clone this repo to a server you use for monitoring
 
 #### Fill out config.json
 example: 
@@ -41,12 +41,11 @@ example:
 
 ### Create Start Script
 
-make directory for script:  
+2. make directory for script:  
 `mkdir -p ~/scripts/`  
 
-create script:  
+3. create script:  
 `vim ~/scripts/propy.sh`  
-
 paste this in:  
 ```
 #! /bin/bash
@@ -56,11 +55,11 @@ python3 /$USER/cosmos-automations/bots/propy/main.py --config /$USER/cosmos-auto
 ```
 _Note: either set USER to a value (ex. export USER=admin) or replace user with the user you using /admin/cosmos-automations or /root/cosmos-automations/_
 
-make executable:  
+4. make executable:  
 `chmod +x start_script.sh `
 
 
-create systemd service:  
+5. create systemd service:  
 `vim /etc/systemd/system/propy.service`
 
 paste this in:  
@@ -77,14 +76,14 @@ Restart=on-failure
 _Note: either set USER to a value (ex. export USER=admin) or replace user with the user you using /admin/cosmos-automations or /root/cosmos-automations/_
 
 
-Test run systemd service:  
+6. Test run systemd service:  
 `systemctl daemon-reload`  
 `systemctl enable propy.service`   
 `systemclt start propy.service`  
 
 ### Schedule with timer  
 
-create systemd timer:  
+7. create systemd timer:  
 `vim /etc/systemd/system/propy.timer`
 
 paste this in:  
@@ -99,7 +98,7 @@ OnCalendar=*-*-* 13:00:00 UTC
 WantedBy=multi-user.target
 ```
 
-start timer:  
+8. start timer:  
 `systemctl daemon-reload`  
 `systemctl enable propy.timer`  
 `systemclt start propy.timer`  
