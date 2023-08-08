@@ -41,10 +41,13 @@ example:
 
 ### Create Start Script
 
-
+make directory for script:  
 `mkdir -p ~/scripts/`  
-`vim ~/scripts/propy.sh`
 
+create script:  
+`vim ~/scripts/propy.sh`  
+
+paste this in:  
 ```
 #! /bin/bash
 source $HOME/.bashrc
@@ -52,10 +55,14 @@ source $HOME/.bashrc
 python3 /root/propy/main.py --config /root/propy/config.json --slack
 ```
 
+make executable:  
 `chmod +x start_script.sh `
 
+
+create systemd service:  
 `vim /etc/systemd/system/propy.service`
 
+paste this in:  
 ```
 [Unit]
 Description=prop alerts
@@ -67,16 +74,17 @@ ExecStart=/$USER/scripts/propy.sh
 Restart=on-failure
 ```
 
+Test run systemd service:  
 `systemctl daemon-reload`  
-`systemctl enable propy.service`  
-
-Test run!  
+`systemctl enable propy.service`   
 `systemclt start propy.service`  
 
-### Schedule with timer 
+### Schedule with timer  
 
+create systemd timer:  
 `vim /etc/systemd/system/propy.timer`
 
+paste this in:  
 ```
 [Unit]
 Description=check for props
@@ -87,10 +95,14 @@ OnCalendar=*-*-* 13:00:00 UTC
 [Install]
 WantedBy=multi-user.target
 ```
+
+start timer:  
 `systemctl daemon-reload`  
-`systemctl enable propy.timer`
+`systemctl enable propy.timer`  
 `systemclt start propy.timer`  
 
+
+You're done! Now you should get alerts daily of the props you haven't yet voted on. 
 
 ## Contributing
 If you would like to contribute to this repository, which is very much appreciated, make sure to check out the resources below. 
