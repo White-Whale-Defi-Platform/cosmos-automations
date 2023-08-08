@@ -52,7 +52,7 @@ paste this in:
 #! /bin/bash
 source $HOME/.bashrc
 
-python3 /root/propy/main.py --config /root/propy/config.json --slack
+python3 /$USER/cosmos-automations/bots/propy/main.py --config /$USER/cosmos-automations/bots/propy/config.json --slack
 ```
 
 make executable:  
