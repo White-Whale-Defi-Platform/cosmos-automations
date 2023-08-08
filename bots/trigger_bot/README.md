@@ -92,10 +92,11 @@ Description=validator claim
 
 [Service]
 Type=simple
-User=root
-ExecStart=/root/scripts/start_script.sh
+User=$USER
+ExecStart=/$USER/scripts/start_script.sh
 Restart=on-failure
 ```
+**note: either set USER to a value or replace user with the user you using**
 
 `systemctl daemon-reload`  
 `systemctl enable claim.service`  
