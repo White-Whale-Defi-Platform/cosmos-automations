@@ -1,0 +1,31 @@
+{
+  "name": "price_bot",
+  "version": "1.0.0",
+  "description": "query blockchain prices",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "clean": "rimraf build",
+    "test": "test",
+    "start": "npm run build && node build/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/White-Whale-Defi-Platform/cosmos-automations.git"
+  },
+  "author": "0xBossanova@proton.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/White-Whale-Defi-Platform/cosmos-automations/issues"
+  },
+  "homepage": "https://github.com/White-Whale-Defi-Platform/cosmos-automations#readme",
+  "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.32.3",
+    "@cosmjs/stargate": "^0.32.3",
+    "rimraf": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25"
+  }
+}
